@@ -27,3 +27,9 @@ group :jekyll_plugins do
 end
 
 gem "webrick", "~> 1.8"
+
+gem "jekyll", "~> 3.9"
+
+gem "jekyll-theme-slate", "~> 0.2.0"
+
+gem "jekyll-commonmark-ghpages", "~> 0.4.0"
