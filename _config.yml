@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Ming-Shing Chen"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "A programmer for cryptographic research"
   location         : "Taipei, Taiwan"
   employer         :
   pubmed           : 
@@ -175,16 +175,19 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
+  #teaching:
+  #  output: false
+  #  permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
+  #portfolio:
+  #  output: false
+  #  permalink: /:collection/:path/
+  #talks:
+  #  output: false
+  #  permalink: /:collection/:path/
+  projects:
     output: true
     permalink: /:collection/:path/
 
@@ -195,6 +198,17 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
     values:
       layout: single
       author_profile: true
@@ -255,7 +269,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Taipei # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
