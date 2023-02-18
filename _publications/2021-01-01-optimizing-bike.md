@@ -2,7 +2,7 @@
 title: "Optimizing BIKE for the intel haswell and ARM cortex-m4"
 collection: publications
 permalink: /publication/2021-01-01-optimizing-bike
-excerpt: 'Software implementations for BIKE KEM.[[Paper]](https://doi.org/10.46586/tches.v2021.i3.97-124)[[Artifact]](https://artifacts.iacr.org/tches/2021/a12/)[[code]](https://github.com/pqcryptotw/bike-ches2021)'
+excerpt: 'Software implementations for BIKE KEM.[[Paper]](https://doi.org/10.46586/tches.v2021.i3.97-124)[[Artifact]](https://artifacts.iacr.org/tches/2021/a12/)[[code]](https://github.com/pqcryptotw/bike-ches2021)[[pre-recorded talk]](https://www.youtube.com/watch?v=vgK5BKBYP_I&list=PLeeS-3Ml-rpp6lyRabcegfAtSSQJ964x5&index=98)'
 date: 2021-01-01
 venue: 'TCHES'
 paperurl: 'https://doi.org/10.46586/tches.v2021.i3.97-124'
