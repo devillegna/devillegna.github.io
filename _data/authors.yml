@@ -1,18 +1,18 @@
-# Authors
-
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+# Per-page author overrides.
+#
+# The site-wide author (name, avatar, social links) lives under `author:` in
+# _config.yml and is what every page uses by default. This file is only needed
+# for guest or co-authored pages: define an entry here, then reference its key
+# from a page's front matter with `author: some-key`, and
+# _includes/author-profile.html will use it instead of the site-wide one.
+#
+# Example:
+#
+# some-key:
+#   name   : "Co Author"
+#   bio    : "Visiting researcher"
+#   avatar : "co-author.jpg"   # file in /images/
+#   email  : "co@example.org"
+#   github : "coauthor"
+#
+# Currently unused -- no page sets `author:`.

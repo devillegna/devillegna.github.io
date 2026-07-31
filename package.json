@@ -1,22 +1,15 @@
 {
-  "name": "minimal-mistakes",
-  "version": "3.4.2",
-  "description": "Minimal Mistakes Jekyll theme npm build scripts",
+  "name": "devillegna-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build scripts for the theme JavaScript bundle (assets/js/main.min.js). Only needed when editing files under assets/js/; the site itself is built by Jekyll.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git+https://github.com/devillegna/devillegna.github.io.git"
   },
-  "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
-  ],
-  "author": "Michael Rose",
+  "author": "Ming-Shing Chen",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
-  },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "https://devillegna.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
