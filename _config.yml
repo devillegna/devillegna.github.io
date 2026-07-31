@@ -215,13 +215,15 @@ defaults:
       share: true
       related: true
   # _projects
+  # read_time is off: these entries are a few lines of links, so a
+  # "less than 1 minute read" estimate is noise. (Publications never had it.)
   - scope:
       path: ""
       type: projects
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true

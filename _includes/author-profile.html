@@ -20,7 +20,15 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    {% comment %}
+      Do NOT delete this button. Below the $large breakpoint (1200px) _sidebar.scss
+      hides .author__urls and this button toggles it open; assets/js/_main.js keys
+      off the button's presence, and with no button it falls back to showing the
+      list only above 1024px -- i.e. the contact links become unreachable on
+      phones and tablets. Relabelled from "Follow" because it reveals contact and
+      profile links, not a follow action.
+    {% endcomment %}
+    <button class="btn btn--inverse" aria-label="Show contact and profile links">Links</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
