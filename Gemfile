@@ -1,35 +1,24 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
-# This will help ensure the proper Jekyll version is running.
-# Happy Jekylling!
-
+# GitHub Pages builds this site with its own pinned set of gems. Depending on
+# the `github-pages` gem alone keeps local builds identical to production: it
+# already pins jekyll, kramdown, sass and the supported plugins. Do NOT add an
+# explicit `gem "jekyll"` line here -- that fights the pin and breaks
+# `bundle install`.
 gem "github-pages", group: :jekyll_plugins
-
-# If you want to use Jekyll native, uncomment the line below.
-# To upgrade, run `bundle update`.
-
-# gem "jekyll"
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  # gem "jekyll-archives"
-  gem "jekyll-feed"
-  gem 'jekyll-sitemap'
-  gem 'hawkins'
-end
-
+# Ruby 3.x no longer bundles webrick, which `jekyll serve` needs.
 gem "webrick", "~> 1.8"
 
-gem "jekyll", "~> 3.9"
-
-gem "jekyll-theme-slate", "~> 0.2.0"
-
-gem "jekyll-commonmark-ghpages", "~> 0.4.0"
+# Plugins. Everything listed here must also appear under `plugins:` in
+# _config.yml and be on the GitHub Pages allowlist:
+# https://pages.github.com/versions/
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+end

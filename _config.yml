@@ -72,10 +72,15 @@ social:
 
 
 # Analytics
+# Was "google-universal", but Universal Analytics (analytics.js) was shut down
+# by Google in 2023, so it only emitted a dead script -- and tracking_id was
+# empty anyway. The "google" provider has been rewritten for GA4: set provider
+# to "google" and put a G-XXXXXXXXXX measurement ID in tracking_id to enable it.
+# Leaving provider as false ships no tracking script at all.
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google" (GA4), "custom"
   google:
-    tracking_id          :
+    tracking_id          : # GA4 measurement ID, e.g. "G-XXXXXXXXXX"
 
 
 # Site Author

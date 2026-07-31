@@ -36,6 +36,11 @@
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/regular";
 @import "vendor/font-awesome/brands";
+// The theme's _includes still use Font Awesome 4 class names (fa-clock-o,
+// fa-map-marker, ...). v4-shims maps them onto FA5 glyphs and must be imported
+// last so its rules win. Remove this once the includes are migrated to FA5.
+@import "vendor/font-awesome/v4-shims";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
